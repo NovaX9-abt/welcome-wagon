@@ -4,6 +4,7 @@ import { SuccessMessage } from "@/components/onboarding/SuccessMessage";
 import { WarningBlock } from "@/components/onboarding/WarningBlock";
 import { CallToAction } from "@/components/onboarding/CallToAction";
 import { OnboardingSection } from "@/components/onboarding/OnboardingSection";
+import { ScreenshotSection1Step1 } from "@/components/onboarding/ScreenshotWithArrows";
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
@@ -31,7 +32,7 @@ const Index = () => {
             <StepCard
               stepNumber={1}
               title="Step 1 — Go to n8n"
-              imagePlaceholder="screenshot_section1_step1.png"
+              imageContent={<ScreenshotSection1Step1 />}
             >
               <p>
                 Open{" "}

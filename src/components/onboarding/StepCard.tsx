@@ -5,9 +5,10 @@ interface StepCardProps {
   title: string;
   children: ReactNode;
   imagePlaceholder?: string;
+  imageContent?: ReactNode;
 }
 
-export const StepCard = ({ stepNumber, title, children, imagePlaceholder }: StepCardProps) => {
+export const StepCard = ({ stepNumber, title, children, imagePlaceholder, imageContent }: StepCardProps) => {
   return (
     <div className="bg-card rounded-xl shadow-md p-6 md:p-8">
       <div className="flex items-start gap-4">
@@ -18,7 +19,11 @@ export const StepCard = ({ stepNumber, title, children, imagePlaceholder }: Step
           <h3 className="text-lg font-semibold text-card-foreground">{title}</h3>
           <div className="text-muted-foreground leading-relaxed">{children}</div>
           
-          {imagePlaceholder && (
+          {imageContent ? (
+            <div className="mt-4 bg-muted rounded-lg border border-border overflow-hidden">
+              {imageContent}
+            </div>
+          ) : imagePlaceholder ? (
             <div className="mt-4 bg-muted rounded-lg border border-border overflow-hidden">
               <div className="aspect-video flex items-center justify-center p-8">
                 <div className="text-center space-y-2">
@@ -31,7 +36,7 @@ export const StepCard = ({ stepNumber, title, children, imagePlaceholder }: Step
                 </div>
               </div>
             </div>
-          )}
+          ) : null}
         </div>
       </div>
     </div>
