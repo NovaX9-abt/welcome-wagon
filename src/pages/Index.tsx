@@ -5,6 +5,7 @@ import { WarningBlock } from "@/components/onboarding/WarningBlock";
 import { CallToAction } from "@/components/onboarding/CallToAction";
 import { OnboardingSection } from "@/components/onboarding/OnboardingSection";
 import { ScreenshotSection1Step1 } from "@/components/onboarding/ScreenshotWithArrows";
+import { ScreenshotSection2Step1 } from "@/components/onboarding/ScreenshotSection2Step1";
 import { Separator } from "@/components/ui/separator";
 import screenshotStep2 from "@/assets/screenshot_section1_step2.png";
 import screenshotStep3 from "@/assets/screenshot_section1_step3.png";
@@ -91,7 +92,7 @@ const Index = () => {
             <StepCard
               stepNumber={1}
               title="Step 1 — Open project settings"
-              imagePlaceholder="screenshot_section2_step1.png"
+              imageContent={<ScreenshotSection2Step1 />}
             >
               <p>
                 In your n8n dashboard, click <span className="font-semibold text-foreground">Settings</span> in the left sidebar.
