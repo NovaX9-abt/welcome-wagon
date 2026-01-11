@@ -6,6 +6,7 @@ import { CallToAction } from "@/components/onboarding/CallToAction";
 import { OnboardingSection } from "@/components/onboarding/OnboardingSection";
 import { ScreenshotSection1Step1 } from "@/components/onboarding/ScreenshotWithArrows";
 import { ScreenshotSection2Step1 } from "@/components/onboarding/ScreenshotSection2Step1";
+import { ScreenshotSection2Step2 } from "@/components/onboarding/ScreenshotSection2Step2";
 import { Separator } from "@/components/ui/separator";
 import screenshotStep2 from "@/assets/screenshot_section1_step2.png";
 import screenshotStep3 from "@/assets/screenshot_section1_step3.png";
@@ -102,7 +103,7 @@ const Index = () => {
             <StepCard
               stepNumber={2}
               title="Step 2 — Open Users tab"
-              imagePlaceholder="screenshot_section2_step2.png"
+              imageContent={<ScreenshotSection2Step2 />}
             >
               <p>
                 Inside project settings, click <span className="font-semibold text-foreground">Users</span>.
