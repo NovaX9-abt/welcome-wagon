@@ -6,6 +6,7 @@ import { CallToAction } from "@/components/onboarding/CallToAction";
 import { OnboardingSection } from "@/components/onboarding/OnboardingSection";
 import { ScreenshotSection1Step1 } from "@/components/onboarding/ScreenshotWithArrows";
 import { Separator } from "@/components/ui/separator";
+import screenshotStep2 from "@/assets/screenshot_section1_step2.png";
 
 const Index = () => {
   return (
@@ -51,7 +52,7 @@ const Index = () => {
             <StepCard
               stepNumber={2}
               title="Step 2 — Create your account"
-              imagePlaceholder="screenshot_section1_step2.png"
+              imageContent={<img src={screenshotStep2} alt="n8n signup form" className="w-full h-auto" />}
             >
               <p className="mb-3">Fill in the required fields to create your account.</p>
               <p className="bg-muted/50 rounded-lg p-3 text-sm">
