@@ -22,11 +22,11 @@ export const ScreenshotSection2Step1 = () => {
 
       {/* Arrow pointing to Settings button in bottom-left sidebar */}
       <svg
-        className="absolute w-16 h-16 md:w-20 md:h-20 drop-shadow-lg"
+        className="absolute w-14 h-14 md:w-16 md:h-16 drop-shadow-lg"
         style={{
-          left: "8%",
-          bottom: "8%",
-          transform: "rotate(180deg)",
+          left: "14%",
+          bottom: "3%",
+          transform: "rotate(-135deg)",
         }}
         viewBox="0 0 64 64"
         fill="none"
