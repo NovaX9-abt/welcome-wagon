@@ -7,6 +7,7 @@ import { OnboardingSection } from "@/components/onboarding/OnboardingSection";
 import { ScreenshotSection1Step1 } from "@/components/onboarding/ScreenshotWithArrows";
 import { Separator } from "@/components/ui/separator";
 import screenshotStep2 from "@/assets/screenshot_section1_step2.png";
+import screenshotStep3 from "@/assets/screenshot_section1_step3.png";
 
 const Index = () => {
   return (
@@ -63,7 +64,7 @@ const Index = () => {
             <StepCard
               stepNumber={3}
               title="Step 3 — Answer onboarding questions"
-              imagePlaceholder="screenshot_section1_step3.png"
+              imageContent={<img src={screenshotStep3} alt="n8n onboarding questions" className="w-full h-auto" />}
             >
               <p className="mb-3">n8n will ask a few onboarding questions. Simply answer them to continue.</p>
               <p className="bg-muted/50 rounded-lg p-3 text-sm">
