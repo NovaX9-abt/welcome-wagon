@@ -13,7 +13,7 @@ export const ScreenshotSection2Step2 = () => {
       <svg
         className="absolute w-14 h-14 md:w-16 md:h-16 drop-shadow-lg"
         style={{
-          left: "54%",
+          left: "58%",
           top: "24%",
           transform: "rotate(-45deg)",
         }}
