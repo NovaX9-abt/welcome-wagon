@@ -7,6 +7,7 @@ import { OnboardingSection } from "@/components/onboarding/OnboardingSection";
 import { ScreenshotSection1Step1 } from "@/components/onboarding/ScreenshotWithArrows";
 import { ScreenshotSection2Step1 } from "@/components/onboarding/ScreenshotSection2Step1";
 import { ScreenshotSection2Step2 } from "@/components/onboarding/ScreenshotSection2Step2";
+import { ScreenshotSection3Step1 } from "@/components/onboarding/ScreenshotSection3Step1";
 import { Separator } from "@/components/ui/separator";
 import screenshotStep2 from "@/assets/screenshot_section1_step2.png";
 import screenshotStep3 from "@/assets/screenshot_section1_step3.png";
@@ -147,7 +148,7 @@ const Index = () => {
             <StepCard
               stepNumber={1}
               title="Step 1 — Open API Keys page"
-              imagePlaceholder="screenshot_section3_step1.png"
+              imageContent={<ScreenshotSection3Step1 />}
             >
               <p className="mb-3">Log in to your OpenRouter account.</p>
               <p>
