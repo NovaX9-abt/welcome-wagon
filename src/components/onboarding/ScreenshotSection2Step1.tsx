@@ -26,7 +26,7 @@ export const ScreenshotSection2Step1 = () => {
         style={{
           left: "14%",
           bottom: "3%",
-          transform: "rotate(-135deg)",
+          transform: "rotate(45deg)",
         }}
         viewBox="0 0 64 64"
         fill="none"
