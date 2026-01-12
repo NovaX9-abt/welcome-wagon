@@ -82,9 +82,7 @@ const Index = () => {
               <p className="mb-3">
                 Click <span className="font-semibold text-foreground">Invite</span> and enter this email address:
               </p>
-              <div className="bg-muted rounded-lg p-4 font-mono text-sm text-foreground select-all mb-3">
-                sebaganwachristal134@gmail.com
-              </div>
+              <div className="bg-muted rounded-lg p-4 font-mono text-sm text-foreground select-all mb-3">contact@aitonlab.rw</div>
               <p>
                 When asked for a role, select: <span className="font-semibold text-foreground">Member</span>
               </p>
